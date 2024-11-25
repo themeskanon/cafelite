@@ -1,0 +1,207 @@
+/*
+Theme Name: Cafelite
+Theme URI: https://themeskanon.com/cafelite
+Author: Themeskanon
+Description: Cafelite Wordpress Template is the Cafe & Restaurant based Wordpress theme. The theme has clean design and it is easy to customize. Use it for growing your web feelings. You can use it for yours portfolio, business website, personal website, bog and many other purpose.
+Version: 2024.1
+Requires PHP: 8.1
+License: GNU General Public License v3 or Later
+License URI: https://www.gnu.org/licenses/gpl.html
+Text Domain: cafelite
+*/
+
+body{
+	padding: 0;
+	margin: 0;
+	border:0;
+}
+
+/*
+Typography 
+---------------------------------------------------------------------
+*/
+
+
+body{
+     font-size: 16px;
+     line-height: 1.5;
+}
+ h1{
+     font-size: 48px;
+     font-weight: 800;
+}
+ h2{
+     font-size:36px;
+     font-weight: 700;
+}
+ h3{
+     font-size: 26px;
+     font-weight: 700;
+}
+ h4{
+     font-size: 20px;
+     font-weight: 600;
+}
+ h5{
+     font-size: 18px;
+     font-weight: 600;
+}
+ h6{
+     font-size: 16px;
+     font-weight: 600;
+}
+ strong{
+     font-weight: 600;
+}
+
+
+/*
+Branding 
+---------------------------------------------------------------------
+*/	
+
+
+.branding{
+	padding: 27px 10px;
+	border-bottom: 1px solid #2b2e31;
+}
+.logo-permalink{
+	display: flex !important;
+}
+.site-title a img{
+	width: 110px;
+}
+
+
+/*
+Menu 
+---------------------------------------------------------------------
+*/
+
+
+.header-menu{
+	border-bottom: 1px solid #2b2e31;
+}
+.menu-menu {
+	padding-left: 0px;
+}
+.menu-menu li{
+	list-style: none;
+}
+.menu-menu li .sub-menu{
+	padding-left: 0px;
+	background-color: #1d252a;
+}
+.menu-menu > li > .sub-menu{
+	padding-top: 15px;
+    padding-bottom: 15px;
+}
+.menu-menu li a{
+	color: #ffffff;
+	padding: 8px 8px 8px 15px;
+}
+
+
+/*
+Sidebar
+---------------------------------------------------------------------
+*/
+
+
+.widget{
+	padding: 18px 15px;
+	border-bottom: 1px solid #2b2e31;
+}
+.widget_search{
+    padding-top: 45px;
+    padding-bottom: 40px;
+}
+.wp-block-search{
+	display: flex;
+    flex-direction: column;
+}
+.wp-block-search__inside-wrapper{
+	display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper){
+	border: none;
+	padding: 0;
+}
+.wp-block-search.wp-block-search__button-only .wp-block-search__button[aria-expanded=true]{
+	max-width: 100% !important;
+}
+.wp-block-search__label{
+	font-weight: normal !important;
+	padding-bottom: 18px;
+	color:#ffffff;
+}
+.wp-block-search__input{
+	font-size: 18px;
+	color: #ffffff;
+    height: 45px;
+    padding: 0 10px;
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid #2b2e31;
+}
+.wp-block-search.wp-block-search__button-only .wp-block-search__input{
+	flex-basis: initial;
+}
+.wp-block-search__input::placeholder {
+  	color: #ffffff;
+}
+.wp-block-search__input:focus-visible {
+    outline: none;
+}
+.wp-block-search__button{
+	font-size: 18px;
+	font-weight: 500;
+	height: 45px;
+	border:1px solid;
+	border-radius: 10px;
+	margin-left: 0;
+}
+.wp-block-search__label, .wp-block-heading{
+	color:#ffffff;
+	font-size: 20px;
+	font-weight: normal !important;
+}
+
+.widget ol li, .widget ul li{
+	font-size: 18px;
+}
+
+.widget ol, .widget ul{
+	padding-left: 0;
+}
+
+.widget ul li a, .widget ol li a{
+	font-size: 18px;
+	color:#ffffff;
+}
+.wp-block-latest-comments__comment-meta, .wp-block-latest-comments__comment-meta a{
+	font-size: 15px !important;
+	color:#ffffff;
+	font-style: italic;
+}
+
+/*
+Content Structure 
+---------------------------------------------------------------------
+*/
+
+.post-edit-link{
+	padding: 15px 0px 0px 15px;  
+}
+.post-entry{
+	min-height: 100vh; 
+	overflow-y: auto;
+}
+
+
+.copyright{
+	padding: 15px; 
+}

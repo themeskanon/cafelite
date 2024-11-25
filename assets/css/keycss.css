@@ -1,0 +1,78 @@
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+.sidebar::-webkit-scrollbar {
+  width: 5px; 
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #111; 
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #ff5400; 
+  border-radius: 5px; 
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #cc4400; 
+}
+
+/* For Firefox */
+/*.sidebar {
+  scrollbar-width: thin; 
+  scrollbar-color: #ff5400 #111; 
+}*/
+
+
+.sidebar a {
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar .closebtn {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  font-size: 36px;
+}
+
+.openbtn {
+  position: absolute;
+  cursor: pointer;
+  padding: 5px 5px 2px 5px;
+  border-radius: 10px;
+  border:none;
+  z-index: 100;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  position: relative;
+}
+
+.content-wrap{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* On smaller screens, where height is less than 450px */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
